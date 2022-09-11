@@ -12,5 +12,5 @@ jobs:
       - name: Login  
         run: |
           cd /www
-          ./product.sh ${{ secrets.DOMAIN }} {{ secrets.GIT_REPO }}
+          ./product.sh ${{ secrets.DOMAIN }} ${{ secrets.GIT_REPO }}
         shell: bash
