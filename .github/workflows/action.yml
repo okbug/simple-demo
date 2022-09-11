@@ -9,7 +9,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - |
-        ssh root@$43.134.204.160 "
-          whoami
-        "
+      - name: Login  
+        run: echo "hello, world"
+        shell: bash
