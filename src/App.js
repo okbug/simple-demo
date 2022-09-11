@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 
 function App() {
   useEffect(() => {
-    console.log(1)
+    console.log(2)
   });
   return (
     <div className="App">
