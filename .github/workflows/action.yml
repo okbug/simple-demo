@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - |
-        ssh root@${{ secrets.SSH_HOST }} "
+        ssh root@$43.134.204.160 "
           whoami
         "
