@@ -1,7 +1,15 @@
-deploy:
-  runs-on: ubuntu-latest
-  steps:
-    - |
-      ssh root@${{ secrets.SSH_HOST }} "
-        whoami
-      "
+name: action test
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - |
+        ssh root@${{ secrets.SSH_HOST }} "
+          whoami
+        "
