@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Login  
-        run: ssh root@${{ secrets.SSH_HOST }} -p 22 && whoami
+        run: pwd && ls
         shell: bash
