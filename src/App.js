@@ -6,6 +6,7 @@ function App() {
   useEffect(() => {
     console.log(2)
     console.log('2022-09-11-21:06')
+    console.log('test');
   });
   return (
     <div className="App">
