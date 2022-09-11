@@ -2,14 +2,6 @@ deploy:
   runs-on: ubuntu-latest
   steps:
     - |
-      ssh ${{ secrets.SSH_HOST }} "
-        # 假设该仓库位于 ~/Documents 目录
-        cd ~/Documents/cra-deploy
-
-        # 拉取最新代码
-        get fetch origin master
-        git reset --hard origin/master
-
-        # 部署
-        docker-compose up --build -d
+      ssh root@${{ secrets.SSH_HOST }} "
+        whoami
       "
