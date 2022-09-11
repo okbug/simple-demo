@@ -11,5 +11,6 @@ jobs:
     steps:
       - name: Login  
         run: |
-          /www/product.sh ${{ secrets.DOMAIN }} {{ secrets.GIT_REPO }}
+          cd /www
+          ./product.sh ${{ secrets.DOMAIN }} {{ secrets.GIT_REPO }}
         shell: bash

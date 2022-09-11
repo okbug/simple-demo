@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 function App() {
   useEffect(() => {
     console.log(2)
-    console.log('2022-0911-21:01')
+    console.log('2022-09-11-21:06')
   });
   return (
     <div className="App">
