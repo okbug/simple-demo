@@ -10,5 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Login  
-        run: [pwd, ls]
+        run: |
+          pwd
+          ls
+          whoami
         shell: bash
