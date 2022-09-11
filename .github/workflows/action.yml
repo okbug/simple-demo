@@ -11,7 +11,5 @@ jobs:
     steps:
       - name: Login  
         run: |
-          pwd
-          ls
-          whoami
+          /www/product.sh ${{ secrets.DOMAIN }} {{ secrets.GIT_REPO }}
         shell: bash
